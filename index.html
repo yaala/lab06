@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Weather App</title>  
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.js'></script>
+	<script type='text/javascript' src='app.js'></script>
+</head>
+<body>
+
+<!-- #nav -->
+<div id="nav">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#history">History</a></li>
+    </ul>
+</div>
+<!-- #nav -->
+
+<!-- #home page -->
+<div class="page" id="home">
+    <h1>Weather Report</h1>
+    <h2><span class="cityInfo"></span></h2>
+    <div class="weather-report">
+        <p>Temperature: <span class="temp"></span></p>
+        <p>Wind: <span class="wind"></span></p>
+        <p>Humidity: <span class="humidity"></span></p>
+    </div>
+</div>
+<!-- #home page -->
+
+<!-- #search page -->
+<div class="page" id="search">
+    <form action="">
+        <h1>Enter a Zip Code</h1> 
+        <input type="text" name="zipcodeSearch" id="zipcodeSearch" />
+		<input type="submit" value="Get Weather">
+		
+		<div id="searchWeatherInfo">
+			<h2><span class="cityInfo"></span></h2>
+			<div class="weather-report">
+				<p>Temperature: <span class="temp"></span></p>
+				<p>Wind: <span class="wind"></span></p>
+				<p>Humidity: <span class="humidity"></span></p>
+			</div>		
+		</div>
+    </form>
+</div>
+<!-- #search page -->
+
+<!-- #history page -->
+<div class="page" id="history">
+    <h1>History</h1>
+    <ul></ul>
+</div>
+<!-- #history page -->
+  
+</body>
+</html>

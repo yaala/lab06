@@ -1,0 +1,75 @@
+html, body {
+    width: 100%;
+    height: 100%;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 12px;
+}
+h1 {
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+	border-bottom: 1px solid #ccc;
+}
+.page {
+    display: none;
+	padding: 20px;
+}
+.page:nth-child(2) {
+    display: block;
+}
+
+.searchWeatherInfo {
+	display: none;
+}
+.weather-report span {
+	font-weight: bold;
+}
+
+/* nav */
+
+ #nav {
+    height: 36px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+}
+#nav ul, #nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#nav li {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    height: 12px;
+    padding: 12px 5px;
+    border-right: 1px solid #e3e3e3;
+}
+#nav li:last-child a {
+    border-right: 0 none;
+}
+
+/* history page */
+
+#history ul,
+#history li {
+	list-style: none;
+	margin: 0;
+	padding: 0; 
+}
+
+#history li {
+	padding: 5px 10px;
+	background: #e3e3e3;
+	margin-bottom: 3px;
+	cursor: pointer;
+}
